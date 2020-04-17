@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <title>Duval Design</title>
@@ -10,21 +14,21 @@
 <body>
 
     <!-- Triangle SVG SECTION -->
-    <svg class="top-triangle top-triangle-shift-contact" xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 842 597">
+    <svg class="top-triangle" xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 842 597">
         <g id="Polygon_2" data-name="Polygon 2" transform="translate(842 597) rotate(180)">
             <path d="M 841.0355834960938 596.5 L 0.9644368290901184 596.5 L 421 0.8675912618637085 L 841.0355834960938 596.5 Z" stroke="none"/>
             <path d="M 421 1.73516845703125 L 1.9288330078125 596 L 840.0711669921875 596 L 421 1.73516845703125 M 421 -6.103515625e-05 L 842 597 L 0 597 L 421 -6.103515625e-05 Z" stroke="none" fill="#000000"/>
         </g>
     </svg>
 
-    <svg class="bottom-left-triangle left-triangle-shift" xmlns="http://www.w3.org/2000/svg" width="391" height="540" viewBox="0 0 391 540">
+    <svg class="bottom-left-triangle" xmlns="http://www.w3.org/2000/svg" width="391" height="540" viewBox="0 0 391 540">
         <g id="Path_1" data-name="Path 1">
             <path d="M 390.0206298828125 539.5 L 0.5 539.5 L 0.5 1.543138742446899 L 390.0206298828125 539.5 Z" stroke="none"/>
             <path d="M 1 3.086181640625 L 1 539 L 389.0412902832031 539 L 1 3.086181640625 M 0 0 L 391 540 L 0 540 L 0 0 Z" stroke="none" fill="#000000"/>
         </g>
     </svg>
 
-    <svg class="bottom-right-triangle right-triangle-shift"  xmlns="http://www.w3.org/2000/svg" width="391" height="540" viewBox="0 0 391 540">
+    <svg class="bottom-right-triangle"  xmlns="http://www.w3.org/2000/svg" width="391" height="540" viewBox="0 0 391 540">
         <g id="Path_1" data-name="Path 1">
             <path d="M 390.5 539.5 L 0.9793838262557983 539.5 L 390.5 1.543138742446899 L 390.5 539.5 Z" stroke="none"/>
             <path d="M 390 3.086181640625 L 1.958709716796875 539 L 390 539 L 390 3.086181640625 M 391 0 L 391 540 L 0 540 L 391 0 Z" stroke="none" fill="#000000"/>
@@ -33,7 +37,7 @@
     <!-- End Triangle SVG SECTION -->
 
     <!-- Burger SVG -->
-    <svg class="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="66"
+    <svg class="burger" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="66"
         viewBox="0 0 57 66">
         <defs>
             <clipPath id="clip-path">
@@ -54,14 +58,44 @@
     </svg>
     <!-- End Burger SVG -->
     
-    <nav>
-        <h3>DD</h3>
+    <nav id="navBar">
+        <h3 id="home">DD</h3>
         <ul>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li id="about">About</li>
+            <li id="portfolio">Portfolio</li>
+            <li id="contact">Contact</li>
         </ul>
+        <!-- Burger SVG -->
+        <svg class="burger" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="66"
+        viewBox="0 0 57 66">
+        <defs>
+            <clipPath id="clip-path">
+                <rect width="57" height="66" fill="none" />
+            </clipPath>
+        </defs>
+        <g id="Repeat_Grid_2" data-name="Repeat Grid 2" clip-path="url(#clip-path)">
+            <g transform="translate(-1798 -22)">
+                <rect id="Rectangle_4" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
+            </g>
+            <g transform="translate(-1798 -2)">
+                <rect id="Rectangle_4-2" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
+            </g>
+            <g transform="translate(-1798 18)">
+                <rect id="Rectangle_4-3" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
+            </g>
+        </g>
+        </svg>
+        <!-- End Burger SVG -->
     </nav>
+    <div class="side-nav-container">
+        <div class="side-nav">
+            <ul>
+                <li id="about">About</li>
+                <li id="portfolio">Portfolio</li>
+                <li id="contact">Contact</li>
+            </ul>
+        </div>
+    </div>
 
     <section class="container container-title">
         <h1>DUVAL</h1>
@@ -80,21 +114,43 @@
     </section>
 
     <section class="container container-portfolio">
-        <div class="box box1"></div>
+        <div class="box box1">
+            <img src="./assets/img/Planner.png" alt="Daily Planner">
+        </div>
         <h2>Portfolio</h2>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-        <div class="box"></div>
+        <div class="box box2">
+            <img src="./assets/img/Password.png" alt="Password Generator">
+        </div>
+        <div class="box box3">
+            <img src="./assets/img/Clara.png" alt="Clara Hatcher">
+        </div>
+        <div class="box box4">
+            <img src="./assets/img/strtUp.png" alt="strtUP">
+        </div>
+        <div class="box box5">
+            <img src="./assets/img/Weather.png" alt="Weather App">
+        </div>
     </section>
 
     <section class="container container-contact">
         <img src="./assets/img/Castleton and Fam.png" alt="Castleton">
-        <div class="contact-background-fill"></div>
+        <div class="contact-background-fill">
+            <!-- FIX HEADER RESPONSIVE SPACING -->
+            <h2 class="contact-header">Contact Me</h2>
+            <form class="contact-form" action="https://formspree.io/xlewkkag" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" placeholder="Email">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Message"></textarea> <br>
+                <input class="btn-submit" type="submit" value="Submit">
+            </form>
+        </div>
     </section>
 
-
-
+    <!-- Main js script -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="./assets/scripts/main.js"></script>
 </body>
 </html>

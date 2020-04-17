@@ -6,6 +6,7 @@
 
 body{
     overscroll-behavior-y: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -16,12 +17,34 @@ body{
     right: 15px;
     transform: scale(.5);
     transform-origin: top right;
+    z-index: 10;
+}
+
+.burger-active{
+    fill: white;
+    transition: .2s ease-in-out .8s;
+}
+
+.burger:hover{
+    cursor: pointer;
 }
 
 .top-triangle{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    transition: .5s ease-in-out;
+    z-index: 3;
+}
+
+.top-triangle-shift{
+    transform: translateX(-50%) translateY(-120px);
+    transition: .5s ease-in-out;
+}
+
+.top-triangle-shift-contact{
+    transform: translateX(-50%) translateY(-120px);
+    transition: .6s ease-in-out;
 }
 
 .bottom-left-triangle{
@@ -30,29 +53,28 @@ body{
     bottom: 0px;
     transform: scale(.7);
     transform-origin: bottom left;
+    transition: .7s ease-in-out;
+    z-index: 3;
 }
+
+.left-triangle-shift{
+    transform: scale(.4);
+    transition: .7s ease-in-out;
+}
+
 .bottom-right-triangle{
     position: fixed;
     right: 0px;
     bottom: 0px;
     transform: scale(.7);
     transform-origin: bottom right;
-}
-
-.top-triangle-shift{
-    transform: translateX(-50%) translateY(-80px);
-}
-
-.top-triangle-shift-contact{
-    transform: translateX(-50%) translateY(-120px);
-}
-
-.left-triangle-shift{
-    transform: scale(.4);
+    transition: .7s ease-in-out;
+    z-index: 3;
 }
 
 .right-triangle-shift{
     transform: scale(.4);
+    transition: .7s ease-in-out;
 
 }
 
@@ -64,12 +86,19 @@ nav{
     min-height: 8vh;
     padding-top: .5rem;
     align-items: top;
-    /* background-color: black; */
+    z-index: 5;
 }
 
 nav h3{
     grid-column: 2/3;
     color: black;
+    transition: .2s ease-in-out;
+}
+
+nav h3:hover{
+    color: gray;
+    cursor: pointer;
+    transition: .2s ease-in-out;
 }
 
 nav ul{
@@ -89,6 +118,59 @@ nav li{
 }
 
 nav li:hover{
+    border-bottom: 3px solid rgb(172, 172, 172);
+    border-radius: 1px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.side-nav-container{
+    position: fixed;
+    right: 0px;
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    transform: translateX(75%) rotate(36deg);
+    transform-origin: bottom left;
+    transition: .5s ease-in-out;
+    z-index: 6;
+}
+
+.side-nav-active{
+    transform: translateX(0%) rotate(0deg);
+    transition: 1s ease-in-out;
+}
+
+.side-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+    width: 100%;
+    min-height: 8vh;
+    padding-top: .5rem;
+    align-items: top;
+    z-index: 5;
+}
+
+.side-nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.side-nav li{
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+
+.side-nav li:hover{
     border-bottom: 3px solid rgb(172, 172, 172);
     border-radius: 1px;
     transition: .2s ease-in-out;
@@ -115,7 +197,7 @@ nav li:hover{
 .container-about{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: top;
 }
 
@@ -154,11 +236,11 @@ nav li:hover{
 }
 
 .about-left{
-    padding: 3rem 15rem 3rem 2rem;
+    padding: 5rem 15rem 3rem 2rem;
 }
 
 .about-right{
-    padding: 3rem 1rem 3rem 2rem;
+    padding: 5rem 5rem 3rem 0rem;
 }
 
 .about-img{
@@ -179,6 +261,22 @@ nav li:hover{
     border-radius: 15px;
 }
 
+.box img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border: 1px solid gray;
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+}
+
+.box img:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px grey;
+    transition: .2s ease-in-out;
+}
+
 .box1{
     justify-self: start;
     grid-column: 1 / span 2;
@@ -194,15 +292,57 @@ nav li:hover{
     align-self: flex-end;
 }
 
+.contact-header{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    transform: translate(-120px, -150px);
+}
 
+.contact-form{
+    width: 50%;
+    margin-left: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-130px);
+}
 
+.contact-form input{
+    background-color: #e4e4e4;
+    width: 30%;
+    padding: .2rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: none;
+    min-width: 200px;
+}
 
+.contact-form textarea{
+    height: 90px;
+    width: 80%;
+    padding: .2rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: none;
+    background-color: #e4e4e4;
+    resize: none;
+    overflow-y: scroll;
+    min-width: 200px;
+}
+
+.btn-submit{
+    width: 10px;
+    height: 30px;
+    font-size: 2rem;
+}
 
 
 /* begin media queries */
-@media only screen and (max-width: 1008px) {
-nav ul{
+@media only screen and (max-width: 1060px) {
+    nav ul{
         display: none;
+        pointer-events: none;
     }
 
     .burger{
