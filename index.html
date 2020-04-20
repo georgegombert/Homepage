@@ -44,22 +44,22 @@
                 <rect width="57" height="66" fill="none" />
             </clipPath>
         </defs>
-        <g id="Repeat_Grid_2" data-name="Repeat Grid 2" clip-path="url(#clip-path)">
+        <g id="burger" data-name="Repeat Grid 2" clip-path="url(#clip-path)">
             <g transform="translate(-1798 -22)">
-                <rect id="Rectangle_4" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
+                <rect id="burger" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
             </g>
             <g transform="translate(-1798 -2)">
-                <rect id="Rectangle_4-2" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
+                <rect id="burger" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
             </g>
             <g transform="translate(-1798 18)">
-                <rect id="Rectangle_4-3" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
+                <rect id="burger" data-name="Rectangle 4" width="57" height="10" transform="translate(1798 22)" />
             </g>
         </g>
     </svg>
     <!-- End Burger SVG -->
     
     <nav id="navBar">
-        <h3 id="home">DD</h3>
+        <img id="home" src="./assets/img/Logo.png" alt="logo">
         <ul>
             <li id="about">About</li>
             <li id="portfolio">Portfolio</li>
@@ -87,6 +87,8 @@
         </svg>
         <!-- End Burger SVG -->
     </nav>
+
+    <!-- mobile nav container -->
     <div class="side-nav-container">
         <div class="side-nav">
             <ul>
@@ -96,6 +98,7 @@
             </ul>
         </div>
     </div>
+    <!-- end mobile nav container -->
 
     <section class="container container-title">
         <h1>DUVAL</h1>
@@ -114,29 +117,44 @@
     </section>
 
     <section class="container container-portfolio">
-        <div class="box box1">
+        <div class="box box-planner">
             <img src="./assets/img/Planner.png" alt="Daily Planner">
+            <div id="plannerBtn" class="hidden button-background">
+                <a href="https://georgegombert.github.io/Homework_5/"><button>View Project</button></a>
+            </div>
         </div>
         <h2>Portfolio</h2>
-        <div class="box box2">
+        <div class="box box-password">
             <img src="./assets/img/Password.png" alt="Password Generator">
+            <div id="passwordBtn" class="hidden button-background">
+                <a href="https://georgegombert.github.io/Homework_3/"><button>View Project</button></a>
+            </div>
         </div>
-        <div class="box box3">
+        <div class="box box-hatcher">
             <img src="./assets/img/Clara.png" alt="Clara Hatcher">
+            <div id="hatcherBtn" class="hidden button-background">
+                <a href="https://georgegombert.github.io/Clara-website/"><button>View Project</button></a>
+            </div>
         </div>
-        <div class="box box4">
+        <div class="box box-strtup">
             <img src="./assets/img/strtUp.png" alt="strtUP">
+            <div id="strtupBtn" class="hidden button-background">
+                <a href="https://brentp24.github.io/strtUP/"><button>View Project</button></a>
+            </div>
         </div>
-        <div class="box box5">
+        <div class="box box-weather">
             <img src="./assets/img/Weather.png" alt="Weather App">
+            <div id="weatherBtn" class="hidden button-background">
+                <a href="https://georgegombert.github.io/Homework_6/"><button>View Project</button></a>
+            </div>
         </div>
     </section>
 
     <section class="container container-contact">
+        <h2 class="contact-header hidden">Contact <br> Me</h2>
         <img src="./assets/img/Castleton and Fam.png" alt="Castleton">
         <div class="contact-background-fill">
             <!-- FIX HEADER RESPONSIVE SPACING -->
-            <h2 class="contact-header">Contact Me</h2>
             <form class="contact-form" action="https://formspree.io/xlewkkag" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Name">
@@ -144,7 +162,7 @@
                 <input type="email" id="email" name="_replyto" placeholder="Email">
                 <label for="message">Message:</label>
                 <textarea name="message" id="message" placeholder="Message"></textarea> <br>
-                <input class="btn-submit" type="submit" value="Submit">
+                <input id="btn-submit" type="submit" value="Submit">
             </form>
         </div>
     </section>

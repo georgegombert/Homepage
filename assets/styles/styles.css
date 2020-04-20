@@ -9,6 +9,14 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* utility section */
+.hidden{
+    display: none;
+    pointer-events: none;
+}
+
+/* end utility section */
+
 
 .burger{
     display: none;
@@ -89,13 +97,14 @@ nav{
     z-index: 5;
 }
 
-nav h3{
+nav img{
     grid-column: 2/3;
+    height: 2rem;
     color: black;
     transition: .2s ease-in-out;
 }
 
-nav h3:hover{
+nav img:hover{
     color: gray;
     cursor: pointer;
     transition: .2s ease-in-out;
@@ -253,6 +262,7 @@ nav li:hover{
 }
 
 .box{
+    position: relative;
     justify-self: center;
     align-self: center;
     height: 200px;
@@ -271,32 +281,60 @@ nav li:hover{
     transition: .3s ease-in-out;
 }
 
-.box img:hover{
+.box:hover{
     transform: scale(1.1);
     box-shadow: 5px 5px 5px grey;
     transition: .2s ease-in-out;
 }
 
-.box1{
+
+.box button{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    padding: .5rem;
+    font-size: .8rem;
+    border-radius: 3px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    /* pointer-events: none;  */
+}
+
+.button-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s ease-in-out;
+}
+
+.box-planner{
     justify-self: start;
     grid-column: 1 / span 2;
 }
-.box2{
+.box-password{
     justify-self: end;
     grid-column: 4 / span 2;
 }
-.box3{
+.box-hatcher{
     grid-column: 2/3;
 }
-.box4{
+.box-strtup{
     align-self: flex-end;
 }
 
 .contact-header{
+    position: fixed;
     color: white;
+    left: 50%;
+    top: 10px;
     font-size: 2.5rem;
     text-align: center;
-    transform: translate(-120px, -150px);
+    z-index: 7;
+    transform: translateX(-50%);
 }
 
 .contact-form{
@@ -331,10 +369,22 @@ nav li:hover{
     min-width: 200px;
 }
 
-.btn-submit{
+#btn-submit{
     width: 10px;
     height: 30px;
-    font-size: 2rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: 2px solid #e4e4e4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#btn-submit:hover{
+    background-color: #e4e4e4;
+    color: black;
+    transition: .2s ease-in-out;
 }
 
 

@@ -61,12 +61,30 @@ $(document).ready(() => {
       topTriangle.addClass("top-triangle-shift");
       leftTriangle.addClass("left-triangle-shift");
       rightTriangle.addClass("right-triangle-shift");
-      topTriangle.removeClass("top-triangle-shift-contact");
+      $(".contact-header").addClass("hidden");
     }
     if(scrollPosition >= scrollBreak4){
       // document.body.style.backgroundColor = "orange"
-      topTriangle.addClass("top-triangle-shift-contact");
+      topTriangle.addClass("top-triangle-shift");
+      $(".contact-header").removeClass("hidden");
     }
   });
 
 });
+
+//Portfolio Buttons animations
+  $(".box-planner").mouseover(() => $("#plannerBtn").removeClass("hidden")); 
+  $(".box-planner").mouseleave(() => $("#plannerBtn").addClass("hidden")); 
+
+  $(".box-password").mouseover(() => $("#passwordBtn").removeClass("hidden")); 
+  $(".box-password").mouseleave(() => $("#passwordBtn").addClass("hidden")); 
+
+  $(".box-hatcher").mouseover(() => $("#hatcherBtn").removeClass("hidden")); 
+  $(".box-hatcher").mouseleave(() => $("#hatcherBtn").addClass("hidden")); 
+
+  $(".box-strtup").mouseover(() => $("#strtupBtn").removeClass("hidden")); 
+  $(".box-strtup").mouseleave(() => $("#strtupBtn").addClass("hidden")); 
+
+  $(".box-weather").mouseover(() => $("#weatherBtn").removeClass("hidden")); 
+  $(".box-weather").mouseleave(() => $("#weatherBtn").addClass("hidden")); 
+
