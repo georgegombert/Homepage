@@ -13,6 +13,9 @@ $(document).ready(() => {
   const leftTriangle = $(".bottom-left-triangle");
   const rightTriangle = $(".bottom-right-triangle");
 
+  const video = $("#backgroundVideo");
+  video.defaultPlaybackRate = 0.2;
+
   //Navbar functionality
   $(document).on("click", (event) =>{
       switch(event.target.id){
