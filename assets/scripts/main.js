@@ -14,7 +14,7 @@ $(document).ready(() => {
   const rightTriangle = $(".bottom-right-triangle");
 
   const video = $("#backgroundVideo");
-  video.defaultPlaybackRate = 0.2;
+  video.defaultPlaybackRate = -1;
 
   //Navbar functionality
   $(document).on("click", (event) =>{
