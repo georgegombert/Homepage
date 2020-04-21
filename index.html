@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <title>Duval Design</title>
@@ -97,21 +98,35 @@
                 <li id="contact">Contact</li>
             </ul>
         </div>
+        <div class="web-links">
+            <a href="https://github.com/georgegombert" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/george-gombert-77652a118" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </div>
     <!-- end mobile nav container -->
 
     <section class="container container-title">
         <h1>DUVAL</h1>
+        <h2>Web developing since 2020</h2>
     </section>
 
     <section class="container container-about">
         <div class="about-left">
-            <h2>My name is</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus molestias reprehenderit mollitia quidem tenetur quaerat, quam, corporis incidunt inventore excepturi quas deserunt autem odio placeat dolorem, at voluptatibus enim?</p>
+            <h2>Hi, I'm George</h2>
+            <br>
+            <p>Front end web developer based out of Salt Lake City. Working as a carpenter and making the switch to building websites on the internet. I enjoy theater, design, and spend most of my free time outside. Looking to work in some fun projects. Let me know what I can do for you!</p>
         </div>
         <div class="about-right">
-            <h2>Skills?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia quas aliquam fugit animi in expedita, corrupti iure sapiente vel aperiam amet culpa aliquid quibusdam, facere, iusto commodi. Obcaecati, excepturi.</p>
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-python"></i>
+                <i class="fab fa-git"></i>
+                <i class="fab fa-bootstrap"></i>
+                <i class="fab fa-adobe"></i>
+            </div>
         </div>
         <img class="about-img" src="./assets/img/Rochester.png" alt="Rochester Flower">
     </section>
@@ -120,32 +135,32 @@
         <div class="box box-planner">
             <img src="./assets/img/Planner.png" alt="Daily Planner">
             <div id="plannerBtn" class="hidden button-background">
-                <a href="https://georgegombert.github.io/Homework_5/"><button>View Project</button></a>
+                <a href="https://georgegombert.github.io/Homework_5/" target="_blank"><button>View Project</button></a>
             </div>
         </div>
-        <h2>Portfolio</h2>
+        <h2 class="portfolio-header">Portfolio</h2>
         <div class="box box-password">
             <img src="./assets/img/Password.png" alt="Password Generator">
             <div id="passwordBtn" class="hidden button-background">
-                <a href="https://georgegombert.github.io/Homework_3/"><button>View Project</button></a>
+                <a href="https://georgegombert.github.io/Homework_3/" target="_blank"><button>View Project</button></a>
             </div>
         </div>
         <div class="box box-hatcher">
             <img src="./assets/img/Clara.png" alt="Clara Hatcher">
             <div id="hatcherBtn" class="hidden button-background">
-                <a href="https://georgegombert.github.io/Clara-website/"><button>View Project</button></a>
+                <a href="https://georgegombert.github.io/Clara-website/" target="_blank"><button>View Project</button></a>
             </div>
         </div>
         <div class="box box-strtup">
             <img src="./assets/img/strtUp.png" alt="strtUP">
             <div id="strtupBtn" class="hidden button-background">
-                <a href="https://brentp24.github.io/strtUP/"><button>View Project</button></a>
+                <a href="https://brentp24.github.io/strtUP/" target="_blank"><button>View Project</button></a>
             </div>
         </div>
         <div class="box box-weather">
             <img src="./assets/img/Weather.png" alt="Weather App">
             <div id="weatherBtn" class="hidden button-background">
-                <a href="https://georgegombert.github.io/Homework_6/"><button>View Project</button></a>
+                <a href="https://georgegombert.github.io/Homework_6/" target="_blank"><button>View Project</button></a>
             </div>
         </div>
     </section>
@@ -154,7 +169,7 @@
         <h2 class="contact-header hidden">Contact <br> Me</h2>
         <img src="./assets/img/Castleton and Fam.png" alt="Castleton">
         <div class="contact-background-fill">
-            <!-- FIX HEADER RESPONSIVE SPACING -->
+            <h2 class="contact-header-mobile">Contact me</h2>
             <form class="contact-form" action="https://formspree.io/xlewkkag" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Name">
