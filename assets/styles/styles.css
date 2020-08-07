@@ -145,6 +145,10 @@ nav li{
     transition: .2s ease-in-out;
 }
 
+a{
+    text-decoration: none;
+}
+
 nav li:hover{
     border-bottom: 3px solid rgb(172, 172, 172);
     border-radius: 1px;
