@@ -212,7 +212,18 @@ nav li:hover{
 
 }
 
+.fas{
+    color: white;
+    margin-right: 1rem;
+    font-size: 2rem;
+
+}
+
 .fab:hover{
+    color: gray;
+}
+
+.fas:hover{
     color: gray;
 }
 
@@ -451,6 +462,15 @@ nav li:hover{
     background-color: #e4e4e4;
     color: black;
     transition: .2s ease-in-out;
+}
+
+.web-links-contact{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    height: 50px;
+    bottom: 20px;
+    transform: translate(-50%, 0%);
 }
 
 
