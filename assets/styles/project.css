@@ -288,16 +288,29 @@ nav li:hover{
 .container-about{
     position: absolute;
     left: 30px;
-    top: 15%;
-    width: 30%;
+    top: 10%;
+    width: 25%;
 }
 
 .container-tech{
     position: absolute;
-    right: 30px;
+    right: 0px;
     top: 15%;
-    width: 30%;
+    width: 25%;
     align-items: center;
+}
+
+.project-imgs{
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-imgs img{
+    width: 18%;
+    margin: 1rem;
 }
 
 

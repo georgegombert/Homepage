@@ -9,30 +9,30 @@
     <link rel="manifest" href="./assets/img/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="../styles/project.css">
     <title>Duval Design</title>
 </head>
 <body>
     <section class="video-background">
-        <video id="backgroundVideo" src="./assets/video/tbg.webm" autoplay loop muted></video>
+        <video id="backgroundVideo" src="../video/tbg.webm" autoplay loop muted></video>
     </section>
 
     <!-- Triangle SVG SECTION -->
-    <svg class="top-triangle" xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 842 597">
+    <svg class="top-triangle top-triangle-shift" xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 842 597">
         <g id="Polygon_2" data-name="Polygon 2" transform="translate(842 597) rotate(180)">
             <path d="M 841.0355834960938 596.5 L 0.9644368290901184 596.5 L 421 0.8675912618637085 L 841.0355834960938 596.5 Z" stroke="none"/>
             <path d="M 421 1.73516845703125 L 1.9288330078125 596 L 840.0711669921875 596 L 421 1.73516845703125 M 421 -6.103515625e-05 L 842 597 L 0 597 L 421 -6.103515625e-05 Z" stroke="none" fill="#000000"/>
         </g>
     </svg>
 
-    <svg class="bottom-left-triangle" xmlns="http://www.w3.org/2000/svg" width="391" height="540" viewBox="0 0 391 540">
+    <svg class="bottom-left-triangle left-triangle-shift" xmlns="http://www.w3.org/2000/svg" width="391" height="540" viewBox="0 0 391 540">
         <g id="Path_1" data-name="Path 1">
             <path d="M 390.0206298828125 539.5 L 0.5 539.5 L 0.5 1.543138742446899 L 390.0206298828125 539.5 Z" stroke="none"/>
             <path d="M 1 3.086181640625 L 1 539 L 389.0412902832031 539 L 1 3.086181640625 M 0 0 L 391 540 L 0 540 L 0 0 Z" stroke="none" fill="#000000"/>
         </g>
     </svg>
 
-    <svg class="bottom-right-triangle"  xmlns="http://www.w3.org/2000/svg" width="391" height="540" viewBox="0 0 391 540">
+    <svg class="bottom-right-triangle right-triangle-shift"  xmlns="http://www.w3.org/2000/svg" width="391" height="540" viewBox="0 0 391 540">
         <g id="Path_1" data-name="Path 1">
             <path d="M 390.5 539.5 L 0.9793838262557983 539.5 L 390.5 1.543138742446899 L 390.5 539.5 Z" stroke="none"/>
             <path d="M 390 3.086181640625 L 1.958709716796875 539 L 390 539 L 390 3.086181640625 M 391 0 L 391 540 L 0 540 L 391 0 Z" stroke="none" fill="#000000"/>
@@ -63,11 +63,11 @@
     <!-- End Burger SVG -->
     
     <nav id="navBar">
-        <img id="home" src="./assets/img/Logo.png" alt="logo">
+        <img id="home" src="../img/Logo.png" alt="logo">
         <ul>
-            <li id="about">About</li>
-            <li id="portfolio">Portfolio</li>
-            <li id="contact">Contact</li>
+            <a href="../../index.html">
+                <li> &larr; Back to home</li>
+            </a>
         </ul>
         <!-- Burger SVG -->
         <svg class="burger" id="burger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="66"
@@ -101,100 +101,43 @@
                 <li id="contact">Contact</li>
             </ul>
         </div>
-        <div class="web-links">
+        <div class="web-links-project">
             <a href="https://github.com/georgegombert" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/george-gombert-77652a118" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
     <!-- end mobile nav container -->
 
-    <section class="container container-title">
-        <h1>DUVAL</h1>
-        <h2>Web developing since 2020</h2>
-    </section>
-
-    <section class="container container-about">
-        <div class="about-left">
-            <h2>Hi, I'm George</h2>
-            <br>
-            <p>Front end web developer based out of Salt Lake City. Working as a carpenter and making the switch to building websites on the internet. I enjoy theater, design, and spend most of my free time outside. Looking to work in some fun projects. Let me know what I can do for you!</p>
+    <section class="container">
+        <div class="container-title">
+            <h1>myCarFace</h1>
         </div>
-        <div class="about-right">
-            <h2>Skills</h2>
+        <div class="container-about">
+            <h4>The second generation of carFacts is now here. This is a full stack application including a react front end and PWA functionality. The application is more mobile friendly for users and takes the original carFats app to the next level.</h4>
+        </div>
+        <div class="container-tech">
+            <h2>Technologies Used</h2>
             <div class="skill-grid">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-js-square"></i>
-                <i class="fab fa-python"></i>
                 <i class="fab fa-git"></i>
-                <i class="fab fa-bootstrap"></i>
-                <i class="fab fa-adobe"></i>
-                <i class="fab fa-react"></i>
-                <i class="fab fa-mongodb"></i>
-            </div>
-            <a href="./assets/pages/Gombert Resume.pdf"><h2>My Resume</h2></a>
-        </div>
-        <img class="about-img" src="./assets/img/Rochester.png" alt="Rochester Flower">
-    </section>
-
-    <section class="container container-portfolio">
-        <div class="box box-planner">
-            <img src="./assets/img/note-taker.png" alt="Daily Planner">
-            <div id="plannerBtn" class="hidden button-background">
-                <a href="./assets/pages/noteTaker.html"><button>View Project</button></a>
             </div>
         </div>
-        <h2 class="portfolio-header">Portfolio</h2>
-        <div class="box box-password">
-            <img src="./assets/img/carFacts.png" alt="Password Generator">
-            <div id="passwordBtn" class="hidden button-background">
-                <a href="./assets/pages/carFacts.html"><button>View Project</button></a>
-            </div>
+        <div class="project-imgs">
+            <img src="../img/myCarFace-2.png" alt="strtUP">
+            <img src="../img/myCarFace.png" alt="strtUP">
+            <img src="../img/myCarFace-3.png" alt="strtUP">
         </div>
-        <div class="box box-hatcher">
-            <img src="./assets/img/bobs-burgers.png" alt="bobs-burgers">
-            <div id="hatcherBtn" class="hidden button-background">
-                <a href="./assets/pages/bobsBurgers.html"><button>View Project</button></a>
-            </div>
-        </div>
-        <div class="box box-strtup">
-            <img src="./assets/img/strtUp.png" alt="strtUP">
-            <div id="strtupBtn" class="hidden button-background">
-                <a href="./assets/pages/strtUp.html"><button>View Project</button></a>
-            </div>
-        </div>
-        <div class="box box-weather">
-            <img src="./assets/img/myCarFace.png" alt="Weather App">
-            <div id="weatherBtn" class="hidden button-background">
-                <a href="./assets/pages/myCarFace.html"><button>View Project</button></a>
-            </div>
+        <div class="web-links">
+            <a href="https://github.com/brentp24/strtUP" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://brentp24.github.io/strtUP/" target="_blank"><i class="fas fa-globe"></i></a>
         </div>
     </section>
-
-    <section class="container container-contact">
-        <h2 class="contact-header hidden">Contact <br> Me</h2>
-        <img src="./assets/img/Castleton and Fam.png" alt="Castleton">
-        <div class="contact-background-fill">
-            <h2 class="contact-header-mobile">Contact me</h2>
-            <form class="contact-form" action="https://formspree.io/xlewkkag" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="_replyto" placeholder="Email">
-                <label for="message">Message:</label>
-                <textarea name="message" id="message" placeholder="Message"></textarea> <br>
-                <input id="btn-submit" type="submit" value="Submit">
-            </form>
-            <div class="web-links-contact">
-                <a href="https://github.com/georgegombert" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/george-gombert-77652a118" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://georgegombert.github.io/Homepage/" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Main js script -->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <script src="./assets/scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
